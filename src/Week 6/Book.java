@@ -1,17 +1,19 @@
 public class Book {
-    String title;
+
+    String titel;
     String author;
-    String releasDate;
+    int erscheinungsjahr;
 
-    public Book(String t, String a, String d){
-        this.title = t;
-        this.author = a;
-        this.releasDate = d;
+    public Book(String titel, String author, int erscheinungsjahr ) {
+        this.titel = titel;
+        this.author = author;
+        this.erscheinungsjahr = erscheinungsjahr;
     }
 
-    public void printInfo(){
-        System.out.println("Title: " + this.title);
-        System.out.println("Author: " + this.author);
-        System.out.println("Release Date: " + this.releasDate);
+    public void printInfo() {
+        System.out.println("Titel des Buches: " + this.titel);
+        System.out.println("Author des Buches: " + this.author);
+        System.out.println("Erscheinungsjahr des Buches: " + this.erscheinungsjahr);
     }
+
 }
