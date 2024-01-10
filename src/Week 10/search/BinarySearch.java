@@ -38,13 +38,11 @@ public class BinarySearch {
 
                 int counter = length + 1;
                 Student[] rightHalf = Arrays.copyOfRange(students, length + 1, students.length);
-                Arrays.stream(studentslist).forEach(System.out::println);
                 return binarySearch(rightHalf, matriculationNumber);
 
             } else {
                 int counter = length;
                 Student[] leftHalf = Arrays.copyOfRange(students, 0, length + 1);
-                Arrays.stream(studentslist).forEach(System.out::println);
                 return binarySearch(leftHalf, matriculationNumber);
             }
 
@@ -77,7 +75,7 @@ public class BinarySearch {
         Arrays.stream(students).forEach(System.out::println);
 
         // Search for a student
-        Student student = binarySearch(students, 196379);
+        Student student = binarySearch(students, 1);
 
         boolean success = student != null;
         System.out.println("Found student: " + success);
